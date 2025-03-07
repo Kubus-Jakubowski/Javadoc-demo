@@ -1,32 +1,22 @@
 package org.example;
 
 /**
- * Klasa główna aplikacji, demonstrująca działanie kalkulatora.
+ * Klasa Main <!-- Opis jest zbyt ogólny, brak informacji o celu klasy -->
  */
 public class Main {
 
     /**
-     * Główna metoda programu. Demonstracja działania klasy {@link Calculator}.
-     *
-     * @param args argumenty wiersza poleceń (niewykorzystywane)
+     * Uruchamia program.
+     * @param args <!-- Brak opisu, co robią argumenty -->
+     * @return void <!-- Błąd: metoda main nie zwraca wartości, więc @return jest zbędny -->
      */
     public static void main(String[] args) {
-        // Tworzymy obiekt kalkulatora
-        Calculator calculator = new Calculator();
+        Calculator calc = new Calculator();
 
-        // Przykładowe obliczenia
-        double sum = calculator.add(10, 5);
-        double difference = calculator.subtract(10, 5);
-        double product = calculator.multiply(10, 5);
-        double quotient = calculator.divide(10, 5);
+        // Dodaje 5 do 3
+        double result = calc.add(5, 3);  // Komentarz nic nie wnosi, bo wynik jest oczywisty
 
-        /*
-         * Wyświetlamy wyniki obliczeń na konsoli.
-         * Każda linia wyświetla wynik innej operacji.
-         */
-        System.out.println("Suma: " + sum);
-        System.out.println("Różnica: " + difference);
-        System.out.println("Iloczyn: " + product);
-        System.out.println("Iloraz: " + quotient);
+        // Wyświetla wynik
+        System.out.println(result);
     }
 }
