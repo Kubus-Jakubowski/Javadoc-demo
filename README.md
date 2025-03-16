@@ -26,7 +26,7 @@ To jest projekt demonstracyjny, którego celem jest pokazanie, jak generować do
    - **Wybierz zakres** – możesz określić, dla których pakietów czy plików chcesz wygenerować dokumentację.
    - **Ustaw Output Directory** – wskaż folder, do którego zostaną zapisane wygenerowane pliki (domyślnie np. `build/docs/javadoc`).
    - Możesz także **dodać dodatkowe opcje** (np. widoczność public, protected, package, private) czy inne argumenty linii poleceń, jeśli zajdzie taka potrzeba.
-4. **Ustaw kodowanie na UTF-8** – aby upewnić się, że wygenerowana dokumentacja obsłuży poprawnie znaki specjalne (np. polskie znaki), kliknij **Show Options** i upewnij się, że w sekcji **Character Encoding** jest ustawione **UTF-8**.
+4. **Ustaw kodowanie na UTF-8** – aby upewnić się, że wygenerowana dokumentacja obsłuży poprawnie znaki specjalne (np. polskie znaki), w oknie **Generate JavaDoc** wejdź do sekcji **Command line arguments** i dodaj argument `-encoding UTF-8` To zapewni, że dokumentacja będzie poprawnie renderować znaki specjalne.
 5. Kliknij **Generate**. Po zakończeniu procesu otwórz wygenerowany plik HTML w przeglądarce, aby przejrzeć dokumentację.
 
 > **Wskazówka:** Jeśli pojawią się problemy z generowaniem dokumentacji, sprawdź konfigurację JDK w ustawieniach projektu: **File > Project Structure > Project** – upewnij się, że ustawiona jest właściwa wersja JDK.
@@ -52,6 +52,17 @@ To jest projekt demonstracyjny, którego celem jest pokazanie, jak generować do
    tasks.javadoc {
        options.encoding = 'UTF-8'
    }
+---
+
+## Gałęzie projektu
+- main: zawiera poprawnie napisane komentarze JavaDoc – zobacz, jak należy to robić, aby dokumentacja była czytelna, zwięzła i profesjonalna.
+
+- wrong_javadoc: zawiera niepoprawnie napisane komentarze JavaDoc – jest to przykład, jak nie pisać komentarzy, z błędami i złymi praktykami. Można przełączać się między tymi gałęziami, aby porównać poprawne i niepoprawne podejście do pisania dokumentacji.
+
+> **Wskazówka:** Aby przełączyć się między gałęziami, użyj komendy Git: <br>
+> git checkout main <br>
+> git checkout wrong_javadoc
+
 ---
 
 ## Dodatkowe wskazówki 
