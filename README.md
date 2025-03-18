@@ -55,13 +55,16 @@ To jest projekt demonstracyjny, którego celem jest pokazanie, jak generować do
 ---
 
 ## Gałęzie projektu
-- main: zawiera poprawnie napisane komentarze JavaDoc – zobacz, jak należy to robić, aby dokumentacja była czytelna, zwięzła i profesjonalna.
+- main: zawiera sam kod aplikacj bez żadnych komentarzy
+ 
+- good_javadoc: zawiera poprawnie napisane komentarze JavaDoc – zobacz, jak należy to robić, aby dokumentacja była czytelna, zwięzła i profesjonalna.
 
 - wrong_javadoc: zawiera niepoprawnie napisane komentarze JavaDoc – jest to przykład, jak nie pisać komentarzy, z błędami i złymi praktykami. Można przełączać się między tymi gałęziami, aby porównać poprawne i niepoprawne podejście do pisania dokumentacji.
 
 > **Wskazówka:** Aby przełączyć się między gałęziami, użyj komendy Git: <br>
 > git checkout main <br>
-> git checkout wrong_javadoc
+> git checkout wrong_javadoc <br>
+> git checkout good_javadoc
 
 ---
 
